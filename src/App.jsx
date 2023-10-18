@@ -1,5 +1,12 @@
 import React from "react";
-
+import { BrowserRouter, Router, Route } from "react-router-dom";
+import Home from "./pages/Home";
 export default function App() {
-  return <div className="text-red">Welcome to the new era</div>;
+  return (
+    <BrowserRouter>
+      <Route>
+        <Route path="/" element={Home} />
+      </Route>
+    </BrowserRouter>
+  );
 }
